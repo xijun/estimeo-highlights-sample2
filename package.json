@@ -1,0 +1,34 @@
+{
+  "name": "estimeo-highlights",
+  "version": "0.1.0",
+  "description": "Highlights of the startups interviewed by Estimeo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Adrien Fenech / adrien.fenech@estimeo.com",
+  "license": "ISC",
+  "dependencies": {
+
+    "material-ui": " __ UI __",
+    "material-ui": "^0.18.0",
+    "react-tap-event-plugin": "^2.0.1",
+
+    "next": " __ CORE __",
+    "next": "^2.4.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+
+    "express": " __ SERVER __",
+    "express": "^4.15.3",
+    "isomorphic-unfetch": "^2.0.0",
+
+    "jest": " __ TESTING __",
+    "jest": "^20.0.0",
+    "enzyme": "^2.9.1",
+    "react-addons-test-utils": "^15.5.1"
+  }
+}

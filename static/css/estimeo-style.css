@@ -1,0 +1,68 @@
+
+body {
+    margin: 0
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 85%;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+}
+
+@media only screen and (min-width: 961px) {
+    .container {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    .container {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+.smallIcon {
+    width: 36px !important;
+    height: 36px !important;
+}
+
+.mediumIcon {
+    width: 48px !important;
+    height: 48px !important;
+}
+
+.largeIcon {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.small {
+    width: 72px !important;
+    height: 72px !important;
+    padding: 16px !important;
+}
+
+.medium {
+    width: 96px !important;
+    height: 96px !important;
+    padding: 24px !important;
+}
+
+.large {
+    width: 120px !important;
+    height: 120px !important;
+    padding: 30px !important;
+}
