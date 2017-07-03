@@ -1,9 +1,9 @@
 version: 2
 jobs:
-	build:
-	working_directory: ~/estimeo-highlights-sample/
-	docker:
-		- image: circleci/node:4.8.2
-	steps:
-		- checkout
-		- run: echo "hello world"
+  build:
+    working_directory: ~/DevOps/estimeo-highlights-sample/
+    docker:
+      - image: circleci/node:4.8.2
+    steps:
+      - checkout
+      - run: echo "hello world"
