@@ -31,7 +31,40 @@ const StartupCard = (props) => (
 
     <Card
         zDepth={0}>
-
+        <CardHeader
+            style={noContainerImgStyles}
+            title={props.author}
+            subtitle="Fondateur(s)"
+            avatar={props.avatar}
+        />
+        <CardMedia style={containerImgStyles}
+                   overlay={<CardTitle title={props.title} subtitle={props.subtitle} />}
+        >
+            <img src={props.img} alt="" />
+        </CardMedia>
+        <CardActions style={noContainerImgStyles}>
+            <Link as={`/s/${props._id}`} href={`/startup?id=${props._id}`} prefetch>
+                <a>
+                    <FlatButton label="Voir"/>
+                </a>
+            </Link>
+            <Link href={props.website} prefetch>
+                <a target="_blank">
+                    <FlatButton label="Site"/>
+                </a>
+            </Link>
+            <Link href={props.youtubeLink} prefetch>
+                <a target="_blank">
+                    <FlatButton
+                        label="Youtube"
+                        labelPosition="before"
+                        primary={true}
+                        icon={<VideoLibrary />}
+                        style={youtubeColor}
+                    />
+                </a>
+            </Link>
+        </CardActions>
     </Card>
 );
 

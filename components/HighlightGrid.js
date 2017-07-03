@@ -28,9 +28,36 @@ const styles = {
 
 const HighlightGridList = (props) => (
 
-    <div style={styles.root}>
 
-        {/**TODO**/}
+    <div style={styles.root}>
+        {props.highlights.map((high) => (
+            <GridList
+                cols={2}
+                cellHeight="auto"
+                style={styles.gridList}
+                key={high.periode}>
+                <Subheader>{high.periode}</Subheader>
+                {high.startups.map((tile) => (
+                    <GridTile
+                        cols={tile.size}
+                        rows={tile.size}
+                        key={tile.img}>
+                        <StartupCard
+                            title={tile.title}
+                            pretty={tile.pretty}
+                            author={tile.author}
+                            avatar={tile.avatar}
+                            subtitle={tile.subtitle}
+                            description={tile.description}
+                            website={tile.website}
+                            youtubeLink={tile.youtubeLink}
+                            _id={tile._id}
+                            img={tile.img}
+                        />
+                    </GridTile>
+                ))}
+            </GridList>
+        ))}
     </div>
 );
 
